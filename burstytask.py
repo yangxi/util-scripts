@@ -42,6 +42,7 @@ def report_busies_tick(process):
         this_tick = total_ticks[i]
         this_total_time = this_tick[0]
         if this_total_time > total_time:
+            total_time = this_total_time
             busies_tick = i
     # "tick  total:totalu:totalk [tidTotal:tidu:tidk]"
     l = "****The bueiest tick: %d\t**********************\n"%(busies_tick)
